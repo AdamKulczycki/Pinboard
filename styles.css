@@ -1,0 +1,105 @@
+body {
+    height: 100%;
+    margin: 0;
+    background: url('images/room1.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+/* .image {
+  background-image: url("room.jpg");
+
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.pinboard-image {
+    height: 607px;
+    width: 900px;
+    /* background-position: center; */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url("images/pinboard.jpg");
+    margin: 0 auto;
+    margin-top: 50px;
+    /* opacity: 0.95; */
+    box-shadow: 10px 10px 38px 14px rgba(0,0,0,0.75);
+    /* background-size: auto; */
+    /* position: absolute; */
+    /* z-index: 100; */
+    /* top: 150px;
+    left: 200px; */
+}
+.polaroids-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.first-row, .second-row {
+  width: 94%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 3%;
+  /* margin: 30px 10px; */
+}
+/* .second-row {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+.polaroid {
+  height: 100%;
+  width: 24%;
+  background-color: rgb(197, 208, 211);
+  /* transform: rotate(20deg); */
+  position: relative;
+  visibility: hidden;
+  box-shadow: 10px 10px 38px 14px rgba(0,0,0,0.75);
+  border-radius: 5px;
+}
+.polaroid:hover {
+  box-shadow: inset 0px 0px 174px 15px rgba(255,255,255,1);
+}
+.red {
+  background-color: red;
+}
+img.photo {
+  width: 90%;
+  height: 75%;
+  margin: 5% 5% 20% 5%;
+  border: 1px solid black;
+  filter: grayscale(40%);
+}
+img.pin {
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  top: -20px;
+  left: 45%;
+}
+.traY {
+  transform:translateY(10px);
+}
+.rotateL {
+  transform: rotate(-10deg);
+}
+.rotateR {
+  transform: rotate(10deg);
+}
+.animation {
+  visibility: visible;
+  animation: fadeInFromNone 2s ease-out;
+}
+@keyframes fadeInFromNone {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
